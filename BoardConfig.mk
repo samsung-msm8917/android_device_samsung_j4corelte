@@ -13,6 +13,9 @@ TARGET_VENDOR := samsung
 # Assert
 TARGET_OTA_ASSERT_DEVICE := j4corelte, j4coreltejx
 
+# Kernel
+TARGET_KERNEL_CONFIG := j4corelte_defconfig
+
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := msm8937
