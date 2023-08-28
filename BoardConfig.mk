@@ -13,6 +13,10 @@ TARGET_VENDOR := samsung
 # Assert
 TARGET_OTA_ASSERT_DEVICE := j4corelte, j4coreltejx
 
+# Camera
+TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
+    /vendor/bin/mm-qcamera-daemon=27
+
 # Filesystem
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USES_MKE2FS := true
@@ -35,6 +39,10 @@ TARGET_BOARD_PLATFORM := msm8937
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+
+# Shims
+TARGET_LD_SHIM_LIBS += \
+    /system/vendor/lib/libsensorndkbridge.so|libbase_shim.so
 
 # SurfaceFlinger
 TARGET_USE_QCOM_SURFACEFLINGER := true
