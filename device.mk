@@ -29,6 +29,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/s5k5e9yx_q05ql_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k5e9yx_q05ql_chromatix.xml \
     $(LOCAL_PATH)/configs/camera/sdm450_camera_j4corelte.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sdm450_camera_j4corelte.xml
 
+# Do not spin up a separate process for the network stack on go devices, use an in-process APK.
+PRODUCT_PACKAGES += InProcessNetworkStack
+PRODUCT_PACKAGES += CellBroadcastAppPlatform
+PRODUCT_PACKAGES += CellBroadcastServiceModulePlatform
+PRODUCT_PACKAGES += com.android.tethering.inprocess
+
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
