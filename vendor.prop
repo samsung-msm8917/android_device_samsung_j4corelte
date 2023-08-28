@@ -1,0 +1,2 @@
+# Low RAM Devices
+ro.config.low_ram=true
