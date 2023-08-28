@@ -13,5 +13,15 @@ TARGET_VENDOR := samsung
 # Assert
 TARGET_OTA_ASSERT_DEVICE := j4corelte, j4coreltejx
 
+# Platform
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_BOARD_PLATFORM := msm8937
+
+# SurfaceFlinger
+TARGET_USE_QCOM_SURFACEFLINGER := true
+
+# Timeservice
+BOARD_USES_QC_TIME_SERVICES := true
+
 # Inherit from the proprietary version
 -include vendor/samsung/j4corelte/BoardConfigVendor.mk
