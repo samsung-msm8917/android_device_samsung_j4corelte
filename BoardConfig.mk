@@ -9,3 +9,6 @@ TARGET_VENDOR := samsung
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := j4corelte, j4coreltejx
+
+# Inherit from the proprietary version
+-include vendor/samsung/j4corelte/BoardConfigVendor.mk
