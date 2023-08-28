@@ -1,2 +1,12 @@
+# Dalvik
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heapgrowthlimit=128m
+dalvik.vm.heapsize=256m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapmaxfree=8m
+ro.dalvik.vm.native.bridge=0
+pm.dexopt.shared=quicken
+
 # Low RAM Devices
 ro.config.low_ram=true
