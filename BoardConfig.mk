@@ -17,6 +17,9 @@ TARGET_OTA_ASSERT_DEVICE := j4corelte, j4coreltejx
 TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
     /vendor/bin/mm-qcamera-daemon=27
 
+# Display
+TARGET_SCREEN_DENSITY := 320
+
 # Filesystem
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USES_MKE2FS := true
